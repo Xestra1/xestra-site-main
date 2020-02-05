@@ -1,11 +1,11 @@
 {
-  "name": "argon-design-system-react",
+  "name": "xestra-site-main",
   "version": "1.0.0",
-  "description": "React version of Argon Design System by Creative Tim",
+  "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
+    "url": "git+https://github.com/Xestra1/xestra-site-main.git"
   },
   "keywords": [
     "react",
@@ -22,11 +22,8 @@
     "argon-design-system-react",
     "design-system-react"
   ],
-  "author": "Creative Tim",
+  "author": "Creative Tim and Xestra",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
-  },
   "homepage": "https://demos.creative-tim.com/argon-design-system-react/",
   "scripts": {
     "start": "react-scripts start",
