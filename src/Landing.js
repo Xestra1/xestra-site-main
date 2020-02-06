@@ -37,11 +37,8 @@ import {
 } from "reactstrap";
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
-import CardsFooter from "components/Footers/CardsFooter.jsx";
-
-// index page sections
-import Download from "../IndexSections/Download.jsx";
+import Navbar from "components/Navbars/Navbar.jsx";
+import Footer from "components/Footers/Footer.jsx";
 
 class Landing extends React.Component {
   state = {};
@@ -53,9 +50,12 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
+        <Navbar />
         <main ref="main">
-          <div className="position-relative">
+          {/* 
+          * Title
+          */}
+          <section className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
               <div className="shape shape-style-1 shape-default">
@@ -128,7 +128,10 @@ class Landing extends React.Component {
               </div>
             </section>
             {/* 1st Hero Variation */}
-          </div>
+          </section>
+          {/* 
+          * Title Cards
+          */}
           <section className="section section-lg pt-lg-0 mt--200">
             <Container>
               <Row className="justify-content-center">
@@ -247,6 +250,9 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+          {/* 
+          * Features
+          */}
           <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
@@ -324,6 +330,9 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+          {/* 
+          * Customers
+          */}
           <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
@@ -395,6 +404,9 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+          {/* 
+          * Modren Interface
+          */}
           <section className="section pb-0 bg-gradient-warning">
             <Container>
               <Row className="row-grid align-items-center">
@@ -499,6 +511,9 @@ class Landing extends React.Component {
               </svg>
             </div>
           </section>
+          {/* 
+          * Team
+          */}
           <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
@@ -685,6 +700,9 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+          {/* 
+          * Website building
+          */}
           <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
@@ -716,6 +734,9 @@ class Landing extends React.Component {
               </Card>
             </Container>
           </section>
+          {/* 
+          * Build Something
+          */}
           <section className="section section-lg bg-gradient-default">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
@@ -779,6 +800,9 @@ class Landing extends React.Component {
               </svg>
             </div>
           </section>
+          {/* 
+          * Contact
+          */}
           <section className="section section-lg pt-lg-0 section-contact-us">
             <Container>
               <Row className="justify-content-center mt--300">
@@ -854,9 +878,8 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <Download />
         </main>
-        <CardsFooter />
+        <Footer />
       </>
     );
   }
