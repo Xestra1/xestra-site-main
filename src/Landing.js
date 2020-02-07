@@ -35,7 +35,9 @@ import {
   Row,
   Col,
   PopoverBody, 
-  UncontrolledPopover
+  UncontrolledPopover,
+  Progress,
+  CardImg
 } from "reactstrap";
 
 // core components
@@ -146,7 +148,7 @@ class Landing extends React.Component {
             </Container>
           </section>
           {/* 
-          * Skills
+          * Skills - finished
           */}
           <section className="section section-lg">
             <Container>
@@ -160,63 +162,51 @@ class Landing extends React.Component {
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                    <div className="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
-                    <h3>Awesome features</h3>
+                    <h3>My Skills</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                      You want website development, minecraft server setups, or management? No problem, I offer all of those services!
                     </p>
-                    <ul className="list-unstyled mt-5">
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-settings-gear-65" />
-                            </Badge>
+                    <ul className="list-unstyled">
+                      <li>
+                        <div className="progress-wrapper">
+                          <div className="progress-info">
+                            <div className="progress-label">
+                              <span>Website Development</span>
+                            </div>
+                            <div className="progress-percentage">
+                              <span>90%</span>
+                            </div>
                           </div>
-                          <div>
-                            <h6 className="mb-0">
-                              Carefully crafted components
-                            </h6>
-                          </div>
+                          <Progress max="100" value="90" color="primary" />
                         </div>
                       </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-html5" />
-                            </Badge>
+                      <li>
+                        <div className="progress-wrapper">
+                          <div className="progress-info">
+                            <div className="progress-label">
+                              <span>Minecraft Servers Setups</span>
+                            </div>
+                            <div className="progress-percentage">
+                              <span>80%</span>
+                            </div>
                           </div>
-                          <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
-                          </div>
+                          <Progress max="100" value="80" color="primary" />
                         </div>
                       </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
+                      <li>
+                        <div className="progress-wrapper">
+                          <div className="progress-info">
+                            <div className="progress-label">
+                              <span>Management/Financials</span>
+                            </div>
+                            <div className="progress-percentage">
+                              <span>80%</span>
+                            </div>
                           </div>
-                          <div>
-                            <h6 className="mb-0">
-                              Super friendly support team
-                            </h6>
-                          </div>
+                          <Progress max="100" value="80" color="primary" />
                         </div>
                       </li>
                     </ul>
@@ -228,11 +218,11 @@ class Landing extends React.Component {
           {/*  
           * Portfolio
           */}
-          <section className="section section-lg bg-gradient-default">
+          <section className="section section-lg bg-gradient-primary">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
-                  <h2 className="display-3 text-white">Build something</h2>
+                  <h2 className="display-3 text-white">Portfolio</h2>
                   <p className="lead text-white">
                     According to the National Oceanic and Atmospheric
                     Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -243,34 +233,106 @@ class Landing extends React.Component {
               </Row>
               <Row className="row-grid mt-5">
                 <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-settings text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Building tools</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+                  <Card className="shadow border-0 mt-4">
+                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardBody className="py-5">
+                      <h6 className="text-primary text-uppercase">
+                        Project 1
+                      </h6>
+                      <p className="description mt-3">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                      <br />
+                      <Button color="primary" type="button">
+                        GITHUB
+                      </Button>
+                    </CardBody>
+                  </Card>
                 </Col>
                 <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-ruler-pencil text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Grow your market</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+                  <Card className="shadow border-0 mt-4">
+                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardBody className="py-5">
+                      <h6 className="text-primary text-uppercase">
+                        Project 2
+                      </h6>
+                      <p className="description mt-3">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                      <br />
+                      <Button color="primary" type="button">
+                        GITHUB
+                      </Button>
+                    </CardBody>
+                  </Card>
                 </Col>
                 <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-atom text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Launch time</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+                  <Card className="shadow border-0 mt-4">
+                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardBody className="py-5">
+                      <h6 className="text-primary text-uppercase">
+                        Project 3
+                      </h6>
+                      <p className="description mt-3">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                      <br />
+                      <Button color="primary" type="button">
+                        GITHUB
+                      </Button>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col lg="4">
+                  <Card className="shadow border-0 mt-4">
+                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardBody className="py-5">
+                      <h6 className="text-primary text-uppercase">
+                        Project 4
+                      </h6>
+                      <p className="description mt-3">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                      <br />
+                      <Button color="primary" type="button">
+                        GITHUB
+                      </Button>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col lg="4">
+                  <Card className="shadow border-0 mt-4">
+                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardBody className="py-5">
+                      <h6 className="text-primary text-uppercase">
+                        Project 5
+                      </h6>
+                      <p className="description mt-3">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                      <br />
+                      <Button color="primary" type="button">
+                        GITHUB
+                      </Button>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col lg="4">
+                  <Card className="shadow border-0 mt-4">
+                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardBody className="py-5">
+                      <h6 className="text-primary text-uppercase">
+                        Project 6
+                      </h6>
+                      <p className="description mt-3">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                      <br />
+                      <Button color="primary" type="button">
+                        GITHUB
+                      </Button>
+                    </CardBody>
+                  </Card>
                 </Col>
               </Row>
             </Container>
@@ -356,7 +418,7 @@ class Landing extends React.Component {
                         <Button
                           block
                           className="btn-round"
-                          color="default"
+                          color="primary"
                           size="lg"
                           type="button"
                         >
