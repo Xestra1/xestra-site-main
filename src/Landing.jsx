@@ -181,6 +181,7 @@ class Landing extends React.Component {
                             </div>
                           </div>
                           <Progress max="100" value="90" color="primary" />
+                          <p className="small">HTML, CSS, JS, SASS, Bootstrap, React.js, JQuery, Node.js</p>
                         </div>
                       </li>
                       <li>
@@ -194,6 +195,7 @@ class Landing extends React.Component {
                             </div>
                           </div>
                           <Progress max="100" value="80" color="primary" />
+                          <p className="small">Configurations, Setups</p>
                         </div>
                       </li>
                       <li>
@@ -207,6 +209,7 @@ class Landing extends React.Component {
                             </div>
                           </div>
                           <Progress max="100" value="80" color="primary" />
+                          <p className="small">Documents, Spreadsheets, Financials, Management, Budgeting</p>
                         </div>
                       </li>
                     </ul>
