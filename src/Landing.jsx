@@ -219,26 +219,23 @@ class Landing extends React.Component {
                 <Col lg="10">
                   <h2 className="display-3 text-white">Portfolio</h2>
                   <p className="lead text-white">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record low maximum sea ice extent tihs year down
-                    to low ice.
+                    These are my projects! I created all of them using my computer and loads of coffee.
                   </p>
                 </Col>
               </Row>
-              <Row className="row-grid mt-5">
+              <Row className="row-grid mt-5 justify-content-center">
                 <Col lg="4">
                   <Card className="shadow border-0 mt-4">
                     <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
-                        Project 1
+                        Free Minecraft Servers
                       </h6>
                       <p className="description mt-3">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Basic mini Minecraft servers that anyone can use and contribute to.
                       </p>
                       <br />
-                      <Button color="primary" type="button">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/free-mc-servers" target="_blank">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -249,13 +246,13 @@ class Landing extends React.Component {
                     <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
-                        Project 2
+                        Budget Manager
                       </h6>
                       <p className="description mt-3">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        A simple little website that can let you manage a basic budget.
                       </p>
                       <br />
-                      <Button color="primary" type="button">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/Budget-manager" target="_blank">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -266,13 +263,13 @@ class Landing extends React.Component {
                     <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
-                        Project 3
+                        Clicker Game
                       </h6>
                       <p className="description mt-3">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        A fun little clicker game that I created for fun and to expand my skills.
                       </p>
                       <br />
-                      <Button color="primary" type="button">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/Clicker-Game" target="_blank">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -283,13 +280,13 @@ class Landing extends React.Component {
                     <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
-                        Project 4
+                        Stock Trader
                       </h6>
                       <p className="description mt-3">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        A basic little stock trading game that was created to expand my skills.
                       </p>
                       <br />
-                      <Button color="primary" type="button">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/stock-trader" target="_blank">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -300,35 +297,35 @@ class Landing extends React.Component {
                     <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
-                        Project 5
+                        Xestra's Website
                       </h6>
                       <p className="description mt-3">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        The website you are currently look and was made to show my skills and portfolio.
                       </p>
                       <br />
-                      <Button color="primary" type="button">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/xestra-site-main" target="_blank">
                         GITHUB
                       </Button>
                     </CardBody>
                   </Card>
                 </Col>
-                <Col lg="4">
+                {/* <Col lg="4">
                   <Card className="shadow border-0 mt-4">
                     <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
-                        Project 6
+                        Sunset Services
                       </h6>
                       <p className="description mt-3">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       </p>
                       <br />
-                      <Button color="primary" type="button">
-                        GITHUB
+                      <Button color="primary" type="button" href="" target="_blank">
+                        Coming Soon
                       </Button>
                     </CardBody>
                   </Card>
-                </Col>
+                </Col> */}
               </Row>
             </Container>
             {/* SVG separator */}
