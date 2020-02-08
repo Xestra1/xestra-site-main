@@ -18,18 +18,14 @@ https://paste.xestra.us/quqofubofo.xml
 */
 import React from "react";
 // nodejs library that concatenates classes
-import classnames from "classnames";
+// import classnames from "classnames";
 
 // reactstrap components
 import {
+  Badge,
   Button,
   Card,
   CardBody,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
@@ -52,7 +48,7 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-        <Navbar /> {/* not finish */}
+        <Navbar /> {/* finished */}
         <main ref="main">
           {/* 
           * Title - finished
@@ -80,7 +76,7 @@ class Landing extends React.Component {
                         <span>Developer</span>
                       </h1>
                       <p className="lead text-white">
-                        Hello! I'm Xestra, a developer from the United States. I create websites, minecraft servers, and do discord setups. 
+                        Hello! I'm Xestra, a developer from the United States. I create websites, minecraft servers, and I help manage businesses. 
                       </p>
                       <div className="btn-wrapper">
                         <Button color="default" id="tooltip641002859" type="button">
@@ -215,7 +211,7 @@ class Landing extends React.Component {
             </Container>
           </section>
           {/*  
-          * Portfolio
+          * Portfolio - finished - needs info
           */}
           <section className="section section-lg bg-gradient-primary" id="portfolio">
             <Container className="pt-lg pb-300">
@@ -361,69 +357,46 @@ class Landing extends React.Component {
                 <Col lg="8">
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <h4 className="mb-1">Want to work with us?</h4>
+                      <h4 className="mb-1">Want to work with me?</h4>
                       <p className="mt-0">
-                        Your project is very important to us.
+                        You have a project idea? I can help make it a reality!
                       </p>
-                      <FormGroup
-                        className={classnames("mt-5", {
-                          focused: this.state.nameFocused
-                        })}
-                      >
-                        <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              <i className="ni ni-user-run" />
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input
-                            placeholder="Your name"
-                            type="text"
-                            onFocus={e => this.setState({ nameFocused: true })}
-                            onBlur={e => this.setState({ nameFocused: false })}
-                          />
-                        </InputGroup>
-                      </FormGroup>
-                      <FormGroup
-                        className={classnames({
-                          focused: this.state.emailFocused
-                        })}
-                      >
-                        <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              <i className="ni ni-email-83" />
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input
-                            placeholder="Email address"
-                            type="email"
-                            onFocus={e => this.setState({ emailFocused: true })}
-                            onBlur={e => this.setState({ emailFocused: false })}
-                          />
-                        </InputGroup>
-                      </FormGroup>
-                      <FormGroup className="mb-4">
-                        <Input
-                          className="form-control-alternative"
-                          cols="80"
-                          name="name"
-                          placeholder="Type a message..."
-                          rows="4"
-                          type="textarea"
-                        />
-                      </FormGroup>
-                      <div>
-                        <Button
-                          block
-                          className="btn-round"
-                          color="primary"
-                          size="lg"
-                          type="button"
-                        >
-                          Send Message
-                        </Button>
-                      </div>
+                      <ul className="list-unstyled mt-5">
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="primary"
+                              >
+                                <i class="fab fa-discord"></i>
+                              </Badge>
+                            </div>
+                            <div>
+                              <h6 className="mb-0">
+                                Xestra#6955
+                              </h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="primary"
+                              >
+                                <i class="fab fa-github"></i>
+                              </Badge>
+                            </div>
+                            <div>
+                              <h6 className="mb-0">
+                                Xestra1
+                              </h6>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                     </CardBody>
                   </Card>
                 </Col>
@@ -438,3 +411,68 @@ class Landing extends React.Component {
 }
 
 export default Landing;
+
+
+{/* <h4 className="mb-1">Want to work with us?</h4>
+<p className="mt-0">
+  Your project is very important to us.
+</p>
+<FormGroup
+  className={classnames("mt-5", {
+    focused: this.state.nameFocused
+  })}
+>
+  <InputGroup className="input-group-alternative">
+    <InputGroupAddon addonType="prepend">
+      <InputGroupText>
+        <i className="ni ni-user-run" />
+      </InputGroupText>
+    </InputGroupAddon>
+    <Input
+      placeholder="Your name"
+      type="text"
+      onFocus={e => this.setState({ nameFocused: true })}
+      onBlur={e => this.setState({ nameFocused: false })}
+    />
+  </InputGroup>
+</FormGroup>
+<FormGroup
+  className={classnames({
+    focused: this.state.emailFocused
+  })}
+>
+  <InputGroup className="input-group-alternative">
+    <InputGroupAddon addonType="prepend">
+      <InputGroupText>
+        <i className="ni ni-email-83" />
+      </InputGroupText>
+    </InputGroupAddon>
+    <Input
+      placeholder="Email address"
+      type="email"
+      onFocus={e => this.setState({ emailFocused: true })}
+      onBlur={e => this.setState({ emailFocused: false })}
+    />
+  </InputGroup>
+</FormGroup>
+<FormGroup className="mb-4">
+  <Input
+    className="form-control-alternative"
+    cols="80"
+    name="name"
+    placeholder="Type a message..."
+    rows="4"
+    type="textarea"
+  />
+</FormGroup>
+<div>
+  <Button
+    block
+    className="btn-round"
+    color="primary"
+    size="lg"
+    type="button"
+  >
+    Send Message
+  </Button>
+</div> */}
