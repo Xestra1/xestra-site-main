@@ -7,24 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/Xestra1/xestra-site-main.git"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "argon",
-    "argon-react",
-    "design",
-    "design-react",
-    "argon-design",
-    "argon-design-react",
-    "kit",
-    "react-kit",
-    "argon-design-system",
-    "argon-design-system-react",
-    "design-system-react"
-  ],
   "author": "Creative Tim and Xestra",
   "license": "MIT",
-  "homepage": "https://demos.creative-tim.com/argon-design-system-react/",
+  "homepage": "https://xestra-site-main.now.sh/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
