@@ -110,7 +110,7 @@ class Landing extends React.Component {
             {/* 1st Hero Variation */}
           </section>
           {/* 
-          * About - finished - needs text
+          * About - finished
           */}
           <section className="section section-lg pt-lg-0 mt--200">
             <Container>
@@ -129,7 +129,7 @@ class Landing extends React.Component {
                             About Me
                           </h6>
                           <p className="description mt-3" style={{lineHeight: "2",}}>
-                          Hello, my name is Nick but I go by Xestra. I've been doing Minecraft setups for a good two years now. About one year ago, I started to work with web development and got really into that. During those years I've started many businesses and Minecraft servers which I gained a considerable amount of experience.
+                          Hello, my name is Nick but I go by Xestra. I've been doing Minecraft setups for a good two years now. About one year ago, I started to work with web development and got really into it. During those years, I've started many businesses and Minecraft servers which I gained a considerable amount of experience.
                           </p>
                         </Col>
                       </Row>
