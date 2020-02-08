@@ -22,7 +22,6 @@ import classnames from "classnames";
 
 // reactstrap components
 import {
-  Badge,
   Button,
   Card,
   CardBody,
@@ -34,8 +33,7 @@ import {
   Container,
   Row,
   Col,
-  PopoverBody, 
-  UncontrolledPopover,
+  UncontrolledTooltip,
   Progress,
   CardImg
 } from "reactstrap";
@@ -59,7 +57,7 @@ class Landing extends React.Component {
           {/* 
           * Title - finished
           */}
-          <section className="position-relative">
+          <section className="position-relative" id="home">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
               <div className="shape shape-style-1 shape-default">
@@ -88,11 +86,9 @@ class Landing extends React.Component {
                         <Button color="default" id="tooltip641002859" type="button">
                           <span className="btn-inner--text">Discord</span>
                         </Button>
-                        <UncontrolledPopover placement="right" target="tooltip641002859">
-                          <PopoverBody>
-                            Xestra#6955
-                          </PopoverBody>
-                        </UncontrolledPopover>
+                        <UncontrolledTooltip placement="right" delay={0} target="tooltip641002859">
+                          Xestra#6955
+                        </UncontrolledTooltip>
                       </div>
                     </Col>
                   </Row>
@@ -150,7 +146,7 @@ class Landing extends React.Component {
           {/* 
           * Skills - finished
           */}
-          <section className="section section-lg">
+          <section className="section section-lg" id="skills">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -221,7 +217,7 @@ class Landing extends React.Component {
           {/*  
           * Portfolio
           */}
-          <section className="section section-lg bg-gradient-primary">
+          <section className="section section-lg bg-gradient-primary" id="portfolio">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
@@ -359,7 +355,7 @@ class Landing extends React.Component {
           {/* 
           * Contact
           */}
-          <section className="section section-lg pt-lg-0 section-contact-us">
+          <section className="section section-lg pt-lg-0 section-contact-us" id="contact">
             <Container>
               <Row className="justify-content-center mt--300">
                 <Col lg="8">

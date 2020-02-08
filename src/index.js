@@ -9,7 +9,7 @@ import "assets/scss/argon-design-system-react.scss";
 import Landing from "Landing.jsx";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter path="/">
     <Landing />
   </BrowserRouter>,
   document.getElementById("root")
