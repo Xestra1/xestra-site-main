@@ -44,7 +44,7 @@ class SimpleFooter extends React.Component {
                   Contact me through discord or github!
                 </h4>
               </Col>
-              <Col className=" text-lg-center btn-wrapper" lg="6">
+              <Col className=" text-lg-right btn-wrapper justify-content-right" lg="6">
                 <Button
                   className=" btn-neutral btn-icon-only btn-round ml-1"
                   color="github"
