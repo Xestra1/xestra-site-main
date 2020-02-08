@@ -9,7 +9,7 @@
   },
   "author": "Creative Tim and Xestra",
   "license": "MIT",
-  "homepage": "https://xestra-site-main.now.sh/",
+  "homepage": "https://xestra.us/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
