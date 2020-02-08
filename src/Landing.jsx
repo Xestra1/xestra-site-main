@@ -226,7 +226,7 @@ class Landing extends React.Component {
               <Row className="row-grid mt-5 justify-content-center">
                 <Col lg="4">
                   <Card className="shadow border-0 mt-4">
-                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardImg top width="100%" src={require("assets/img/freemcserver.png")} alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
                         Free Minecraft Servers
@@ -243,7 +243,7 @@ class Landing extends React.Component {
                 </Col>
                 <Col lg="4">
                   <Card className="shadow border-0 mt-4">
-                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardImg top width="100%" src={require("assets/img/budgetmanager.png")} alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
                         Budget Manager
@@ -260,7 +260,7 @@ class Landing extends React.Component {
                 </Col>
                 <Col lg="4">
                   <Card className="shadow border-0 mt-4">
-                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardImg top width="100%" src={require("assets/img/clickergame.png")} alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
                         Clicker Game
@@ -277,7 +277,7 @@ class Landing extends React.Component {
                 </Col>
                 <Col lg="4">
                   <Card className="shadow border-0 mt-4">
-                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardImg top width="100%" src={require("assets/img/stocktrader.png")} alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
                         Stock Trader
@@ -294,7 +294,7 @@ class Landing extends React.Component {
                 </Col>
                 <Col lg="4">
                   <Card className="shadow border-0 mt-4">
-                    <CardImg top width="100%" src="http://via.placeholder.com/318x180" alt="Card image cap" />
+                    <CardImg top width="100%" src={require("assets/img/xestraweb.png")} alt="Card image cap" />
                     <CardBody className="py-5">
                       <h6 className="text-primary text-uppercase">
                         Xestra's Website
