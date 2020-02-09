@@ -52,7 +52,7 @@ class SimpleFooter extends React.Component {
                   size="lg"
                   target="_blank"
                 >
-                  <i className=" fa fa-github" />
+                  <i className=" fa fa-github" /> 
                 </Button>
               </Col>
             </Row>

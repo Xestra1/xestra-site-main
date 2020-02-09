@@ -235,7 +235,7 @@ class Landing extends React.Component {
                         Basic mini Minecraft servers that anyone can use and contribute to.
                       </p>
                       <br />
-                      <Button color="primary" type="button" href="https://github.com/Xestra1/free-mc-servers" target="_blank">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/free-mc-servers" target="_blank" rel="noreferrer">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -252,7 +252,7 @@ class Landing extends React.Component {
                         A simple little website that can let you manage a basic budget.
                       </p>
                       <br />
-                      <Button color="primary" type="button" href="https://github.com/Xestra1/Budget-manager" target="_blank">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/Budget-manager" target="_blank" rel="noreferrer">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -269,7 +269,7 @@ class Landing extends React.Component {
                         A fun little clicker game that I created for fun and to expand my skills.
                       </p>
                       <br />
-                      <Button color="primary" type="button" href="https://github.com/Xestra1/Clicker-Game" target="_blank">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/Clicker-Game" target="_blank" rel="noreferrer">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -286,7 +286,7 @@ class Landing extends React.Component {
                         A basic little stock trading game that was created to expand my skills.
                       </p>
                       <br />
-                      <Button color="primary" type="button" href="https://github.com/Xestra1/stock-trader" target="_blank">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/stock-trader" target="_blank" rel="noreferrer">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -303,7 +303,7 @@ class Landing extends React.Component {
                         The website you are currently look and was made to show my skills and portfolio.
                       </p>
                       <br />
-                      <Button color="primary" type="button" href="https://github.com/Xestra1/xestra-site-main" target="_blank">
+                      <Button color="primary" type="button" href="https://github.com/Xestra1/xestra-site-main" target="_blank" rel="noreferrer">
                         GITHUB
                       </Button>
                     </CardBody>
@@ -366,7 +366,7 @@ class Landing extends React.Component {
                                 className="badge-circle mr-3"
                                 color="primary"
                               >
-                                <i class="fab fa-discord"></i>
+                                <i className="fab fa-discord"></i>
                               </Badge>
                             </div>
                             <div>
@@ -383,7 +383,7 @@ class Landing extends React.Component {
                                 className="badge-circle mr-3"
                                 color="primary"
                               >
-                                <i class="fab fa-github"></i>
+                                <i className="fab fa-github"></i>
                               </Badge>
                             </div>
                             <div>

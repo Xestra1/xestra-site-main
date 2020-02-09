@@ -67,7 +67,7 @@ class NNavbar extends React.Component {
                 </h3>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
-                <span className="navbar-toggler-icon" />
+                <span className="navbar-toggler-icon" /> 
               </button>
               <UncontrolledCollapse navbar toggler="#navbar_global">
                 <div className="navbar-collapse-header">
@@ -80,7 +80,7 @@ class NNavbar extends React.Component {
                     <Col className="collapse-close" xs="6">
                       <button className="navbar-toggler" id="navbar_global">
                         <span />
-                        <span />
+                        <span /> 
                       </button>
                     </Col>
                   </Row>
@@ -164,8 +164,6 @@ class NNavbar extends React.Component {
                     <Button
                       className="btn-neutral"
                       color="default"
-                      href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-navbar"
-                      target="_blank"
                       id="tooltip112445213"
                     >
                       <span className="nav-link-inner--text">
